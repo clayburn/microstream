@@ -325,6 +325,23 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.0.0-M7</version>
 				</plugin>
+				<plugin>
+				<groupId>com.gradle</groupId>
+				<artifactId>gradle-enterprise-maven-extension</artifactId>
+				<configuration>
+					<gradleEnterprise>
+						<normalization>
+							<runtimeClassPath>
+								<metaInf>
+									<ignoredAttributes>
+										<ignore>Bnd-LastModified</ignore>
+									</ignoredAttributes>
+								</metaInf>
+							</runtimeClassPath>
+						</normalization>
+					</gradleEnterprise>
+				</configuration>
+			</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
