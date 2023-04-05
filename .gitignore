@@ -90,3 +90,5 @@ profile
 
 # Vim
 *.swp
+
+.mvn/.gradle-enterprise/gradle-enterprise-workspace-id
